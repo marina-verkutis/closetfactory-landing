@@ -19,6 +19,32 @@ body
     font-size: 1.2rem
     color: #ffffff
     +bold
+.bg-secondary
+    background-color: $bg-secondary
+.input
+    height: 60px
+    padding-left: 30px
+    border: 1px solid $border-color
+    font-size: 1.7rem
+input[type="checkbox"]
+    display: none
+    &:checked + label:before
+        background: url('../img/offer/check-mark.png') no-repeat center center
+        background-size: cover
+.checkbox
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 30px
+        font-size: 1.6rem
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            width: 20px
+            height: 20px
+            border: 1px solid $border-color
+            margin-right: 10px
 @media (max-width: 576px)
     .button-o
         font-size: 1rem

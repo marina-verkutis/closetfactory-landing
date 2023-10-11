@@ -68,6 +68,46 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.bg-secondary {
+  background-color: #EBEBEB;
+}
+
+.input {
+  height: 60px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+  font-size: 1.7rem;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked + label:before {
+  background: url("../img/offer/check-mark.png") no-repeat center center;
+  background-size: cover;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  font-size: 1.6rem;
+}
+.checkbox-label:hover {
+  cursor: pointer;
+}
+.checkbox-label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dddddd;
+  margin-right: 10px;
+}
+
 @media (max-width: 576px) {
   .button-o {
     font-size: 1rem;
@@ -175,7 +215,7 @@ body {
 .logo__text {
   display: block;
   margin-bottom: 5px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-family: "Proxima Nova Semibold", sans-serif;
@@ -234,5 +274,103 @@ body {
 @media (max-width: 991px) {
   .hero {
     background-position: top left -450px;
+  }
+}
+.offer {
+  padding: 129px 0;
+}
+.offer-block {
+  background: #ffffff url("../img/offer/bg-offer.png") no-repeat center right;
+  background-size: contain;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  padding: 80px;
+  margin-top: -200px;
+}
+.offer__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  margin-bottom: 10px;
+}
+.offer__subtitle {
+  display: block;
+  font-size: 2.1rem;
+  margin-bottom: 40px;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+.form__row:last-child {
+  margin-bottom: 0;
+}
+.form__label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+.form__group {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+.form__group-second {
+  -ms-flex-preferred-size: 37.5%;
+      flex-basis: 37.5%;
+}
+.form__input {
+  width: 100%;
+  border-right-width: 0px;
+}
+.form__input:last-child {
+  border-right-width: 1px;
+}
+.form__button {
+  height: 60px;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -140px;
+  }
+}
+@media (max-width: 768px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
+    padding: 40px;
+    margin-top: -250px;
+  }
+  .offer__title {
+    font-size: 1.8rem;
+  }
+  .offer__subtitle {
+    font-size: 1.6rem;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form__group, .form__group-second {
+    width: 100%;
+  }
+  .form__input {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
