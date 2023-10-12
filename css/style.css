@@ -49,6 +49,10 @@ body {
   font-size: 1.7rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -63,6 +67,7 @@ body {
 }
 
 .button-o {
+  text-decoration: none;
   border: 2px solid #382D32;
   background-color: transparent;
   padding: 17px 22px;
@@ -73,6 +78,7 @@ body {
 }
 
 .button {
+  text-decoration: none;
   border: none;
   text-transform: uppercase;
   padding: 17px 50px;
@@ -80,6 +86,16 @@ body {
   font-size: 1.2rem;
   color: #ffffff;
   font-family: "Proxima Nova Semibold", sans-serif;
+}
+.button-add {
+  background-color: #54444b;
+  color: #ffffff;
+}
+.button-like {
+  width: 30px;
+  background: url("../img/catalog/like.png") no-repeat center center;
+  background-size: cover;
+  background-color: #382D32;
 }
 
 .bg-secondary {
@@ -438,5 +454,86 @@ input[type=checkbox]:checked + label:before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 50px;
+  }
+}
+.catalog {
+  background-color: #EBEBEB;
+}
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.catalog-card {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4);
+          box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4);
+}
+.catalog-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(56, 45, 50, 0.6);
+}
+.catalog-card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.catalog-card__button {
+  font-size: 1.1rem;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px;
+  height: 30px;
+}
+.catalog__card {
+  margin-bottom: 30px;
+}
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .catalog-card {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .catalog-card__button {
+    padding: 20px 30px;
+    height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .catalog-card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
