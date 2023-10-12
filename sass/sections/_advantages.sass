@@ -1,0 +1,27 @@
+.advantages
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex-basis: 33.3%
+            text-align: center
+            margin-bottom: 90px
+        &__image
+            width: 80px
+        &__text
+            width: 200px
+@media (max-width: 991px)
+    .advantages
+        &-block
+            &__item
+                flex-basis: 50%
+@media (max-width: 768px)
+    .advantages
+        &-block
+            &__item
+                flex-basis: 100%
+                margin-bottom: 50px
