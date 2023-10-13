@@ -4,13 +4,24 @@
     max-width: 1170px
     margin: auto
     height: 100%
-@media (max-width: 1199px)
+
+@mixin desktop
+    @media screen and (max-width: 1199px)
+        @content
+@mixin tablet
+    @media screen and (max-width: 991px)
+        @content
+@mixin phone
+    @media screen and (max-width: 768px)
+        @content
+
+@include desktop
     .container
         max-width: 960px
-@media (max-width: 991px)
+@include tablet
     .container
         max-width: 750px
-@media (max-width: 768px)
+@include phone
     .container
         max-width: 100%
         padding: 0 20px

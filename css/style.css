@@ -9,17 +9,17 @@
   height: 100%;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .container {
     max-width: 960px;
   }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .container {
     max-width: 750px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
     padding: 0 20px;
@@ -262,7 +262,7 @@ input[type=checkbox]:checked + label:before {
   color: #7b7b79;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .navbar__mobile, .navbar__landline {
     display: none;
   }
@@ -307,7 +307,7 @@ input[type=checkbox]:checked + label:before {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .hero {
     background-position: top left -450px;
   }
@@ -373,12 +373,12 @@ input[type=checkbox]:checked + label:before {
   width: 100%;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .offer-block {
     background-position: center right -140px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .offer-block {
     background: none;
     background-color: #fff;
@@ -443,13 +443,13 @@ input[type=checkbox]:checked + label:before {
   width: 200px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .advantages-block__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .advantages-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -521,7 +521,7 @@ input[type=checkbox]:checked + label:before {
   display: block;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .catalog-card {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
@@ -531,7 +531,7 @@ input[type=checkbox]:checked + label:before {
     height: 50px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .catalog-card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -593,13 +593,13 @@ input[type=checkbox]:checked + label:before {
   margin-bottom: 40px;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .blog-list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .blog__title {
     font-size: 2rem;
   }

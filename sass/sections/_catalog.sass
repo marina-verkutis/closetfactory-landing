@@ -42,14 +42,14 @@
             margin-bottom: 24px
     &__description
         display: block
-@media (max-width: 991px)
+@include tablet
     .catalog
         &-card
             flex-basis: 48%
             &__button
                 padding: 20px 30px
                 height: 50px
-@media (max-width: 768px)
+@include phone
     .catalog
         &-card
             flex-basis: 100%
