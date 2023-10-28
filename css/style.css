@@ -973,15 +973,15 @@ input[type=checkbox]:checked + label:before {
   width: 40px;
 }
 .footer__icon-facebook {
-  background: url("../../img/footer/social/facebook-icon.png") no-repeat center center;
+  background: url("../img/footer/social/facebook-icon.png") no-repeat center center;
   background-size: cover;
 }
 .footer__icon-twitter {
-  background: url("../../img/footer/social/twitter-icon.png") no-repeat center center;
+  background: url("../img/footer/social/twitter-icon.png") no-repeat center center;
   background-size: cover;
 }
 .footer__icon-instagram {
-  background: url("../../img/footer/social/instagram-icon.png") no-repeat center center;
+  background: url("../img/footer/social/instagram-icon.png") no-repeat center center;
   background-size: cover;
 }
 .footer__contacts {
