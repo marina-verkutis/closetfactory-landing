@@ -1,11 +1,14 @@
 .offer
     padding: 129px 0
     &-block
-        background: #ffffff url("../img/offer/bg-offer.png") no-repeat center right
         background-size: contain
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
         padding: 80px
         margin-top: -200px
+        &_calc-bg
+            background: #ffffff url("../img/offer/bg-offer.png") no-repeat center right
+        &_request-bg
+            background: #ffffff url("../img/offer/bg-offer-2.png") no-repeat center right
     &__title
         font-size: 2.5rem
         text-transform: uppercase
@@ -15,6 +18,7 @@
         display: block
         font-size: 2.1rem
         margin-bottom: 40px
+        max-width: 800px
 .form
     &__row
         display: flex
@@ -23,6 +27,9 @@
         margin-bottom: 25px
         &:last-child
             margin-bottom: 0
+        &-checkbox-request
+            flex-direction: column
+            align-items: flex-start
     &__label
         display: block
         font-size: 1.6rem
@@ -39,10 +46,20 @@
     &__button
         height: 60px
         width: 100%
+    &__policy
+        font-size: 1.4rem
+        margin-top: 10px
 @include desktop
     .offer
         &-block
             background-position: center right -140px
+@include tablet
+    .offer
+        &__subtitle
+            max-width: 500px
+    .form
+        &__policy
+            max-width: 300px
 @include phone
     .offer
         &-block
@@ -54,15 +71,24 @@
             font-size: 1.8rem
         &__subtitle
             font-size: 1.6rem
+            max-width: 500px
     .form
         &__row
             flex-direction: column
             &-checkbox
                 flex-direction: row
+                &-request
+                        flex-direction: column
         &__group, &__group-second
             width: 100%
         &__input
             margin-bottom: 20px
+        &__policy
+            max-width: 100%
+    .checkbox
+        &-label
+            &__link
+                font-size: 1.4rem
 @media (max-width: 360px)
     .form
         &__row
