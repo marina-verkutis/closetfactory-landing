@@ -205,7 +205,7 @@ input[type=checkbox]:checked + label:before {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 20;
   top: 80px;
   left: 0;
   width: 100%;
@@ -237,32 +237,58 @@ input[type=checkbox]:checked + label:before {
   color: #ffffff;
 }
 .menu-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
   background-color: transparent;
   border: none;
   border-right: 1px solid #b7b0c2;
   border-left: 1px solid #b7b0c2;
   height: 80px;
   width: 70px;
+  padding: 0;
+}
+.menu-button_active .menu-button__line {
+  background-color: transparent;
+}
+.menu-button_active .menu-button__line::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu-button_active .menu-button__line::after {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.menu-button:hover {
+  cursor: pointer;
+}
+.menu-button:focus {
+  outline: none;
 }
 .menu-button__line {
-  display: block;
-  width: 20px;
+  position: absolute;
+  left: 30%;
+  width: 30px;
   height: 3px;
   background-color: #382D32;
-  margin: 2px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu-button__line::before, .menu-button__line::after {
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #382D32;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu-button__line::before {
+  top: -12px;
+}
+.menu-button__line::after {
+  top: 12px;
 }
 
 .logo__text {
@@ -548,6 +574,7 @@ input[type=checkbox]:checked + label:before {
   position: relative;
   -webkit-box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4);
           box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4);
+  overflow: hidden;
 }
 .catalog-card__image {
   display: block;
@@ -571,6 +598,16 @@ input[type=checkbox]:checked + label:before {
   position: absolute;
   bottom: 0;
   right: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.catalog-card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 .catalog-card__button {
   font-size: 1.1rem;
@@ -678,7 +715,7 @@ input[type=checkbox]:checked + label:before {
   }
 }
 .price {
-  background-color: #EBEBEB;
+  background-color: #f1f1f1;
 }
 .price-block {
   display: -webkit-box;
@@ -736,7 +773,7 @@ input[type=checkbox]:checked + label:before {
   padding: 20px;
 }
 .price-card:hover .price-card__button {
-  z-index: 30;
+  z-index: 1;
   bottom: -80px;
 }
 
