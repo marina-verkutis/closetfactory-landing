@@ -1276,4 +1276,24 @@ input[type=checkbox]:checked + label:before {
 .about-block__text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .about-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-block__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-block__text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

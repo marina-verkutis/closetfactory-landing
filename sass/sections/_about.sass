@@ -9,3 +9,13 @@
             width: 40%
         &__text
             flex-basis: 50%
+@include tablet
+    .about
+        &-block
+            flex-direction: column
+            align-items: center
+            &__image
+                width: 100%
+                margin-bottom: 30px
+            &__text
+                flex-basis: 100%
