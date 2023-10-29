@@ -3,9 +3,12 @@
     padding-bottom: 200px
     &-slider
         display: flex
-        justify-content: space-between
+        flex-wrap: wrap
+        justify-content: center
         &__item
             text-align: center
+            flex-basis: 33%
+            margin-bottom: 40px
         &__image
             display: block
             width: 80px
@@ -14,10 +17,12 @@
             border: 2px solid $primary-color
             margin: 20px auto
         &__text
+            display: block
+            margin: 20px auto
             position: relative
             font-size: 1.5rem
             font-style: italic
-            max-width: 370px
+            width: 93%
             padding: 20px
             background-color: #ffffff
             border-radius: 10px
@@ -29,3 +34,27 @@
                 transform: translateX(-50%)
                 border: 10px solid transparent
                 border-top: 10px solid #ffffff
+.dots-style
+    display: flex
+    text-align: center
+    justify-content: space-between
+    list-style: none
+    margin: 0
+    padding: 0
+    & button
+        background: #bbbbbbcd
+        border: none
+        border-radius: 50%
+        font-size: 0
+        height: 15px
+        width: 15px
+        margin: 5px
+        outline: none
+    & li[class="slick-active"] button
+            background: $primary-color
+@media (max-width: 360px)
+    .dots-style
+        & button
+            height: 10px
+            width: 10px
+            margin: 2px
