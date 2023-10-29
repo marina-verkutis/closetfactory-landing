@@ -53,9 +53,21 @@ input:focus, select:focus
         color: #ffffff
     &-like
         width: 30px
+        height: 30px
+        padding: 10px
         background: url('../img/catalog/like.png') no-repeat center center
         background-size: cover
         background-color: $primary-color
+        border: none
+        &_active
+            background: url('../img/catalog/like-active.png') no-repeat center center
+            background-size: cover
+            background-color: #685050
+        &:hover
+            cursor: pointer
+            background: url('../img/catalog/like-active.png') no-repeat center center
+            background-size: cover
+            background-color: #685050
     &:hover
         cursor: pointer
         background-color: $active-color

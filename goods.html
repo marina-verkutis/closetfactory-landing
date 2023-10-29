@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closet Factory - о компании</title>
+    <title>Closet Factory - каталог товаров</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/components/catalog.js" defer></script>
+    <script src="js/components/localStorageUtil.js" defer></script>
+    <script src="js/components/goods-render.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -56,21 +59,12 @@
     <!-- /.header -->
 
     <main>
-        <section class="about section">
+        <section class="goods section">
             <div class="container">
-                <h2 class="section-title section__title">О компании</h2>
-                <div class="about-block">
-                    <img src="img/about/about-img-1.jpg" alt="Closet Factory" class="about-block__image">
-                    <div class="about-block__text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
+                <h2 class="section-title section__title">Каталог готовых шкафов</h2>
+                <div class="goods-block" id="goods-block">
+                    
                 </div>
-
             </div>
         </section>
     </main>

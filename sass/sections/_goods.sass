@@ -1,0 +1,36 @@
+.goods
+    padding-bottom: 0
+    margin-top: 50px
+    min-height: calc(100vh - 240px)
+    &-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__item
+            display: block
+            margin-bottom: 30px
+            padding: 20px
+            position: relative
+        &-item
+            flex-basis: 32%
+            background-color: #ffffff
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+        &__title
+            font-size: 2.5rem
+            +bold
+        &__description
+            border-top: 1px solid $primary-color
+            border-bottom: 1px solid $primary-color
+            margin-bottom: 15px
+        &__price
+            font-size: 2.3rem
+        &__offer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+        &__button
+            &-like
+                position: absolute
+                top:20px
+                z-index: 15 
