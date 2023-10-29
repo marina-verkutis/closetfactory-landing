@@ -6,6 +6,9 @@ body
     font-size: 1.7rem
 img
     max-width: 100%
+input:focus, select:focus
+    outline: 0
+    outline-offset: 0
 .section
     padding: 100px 0
     &-title
@@ -69,6 +72,14 @@ img
     padding-left: 30px
     border: 1px solid $border-color
     font-size: 1.7rem
+    &:hover
+        border: 1px solid #761313
+    &:active
+        border: 1px solid #761313
+        outline:none
+    &:focus
+        border: 1px solid #761313
+        outline:none
 input[type="checkbox"]
     display: none
     &:checked + label:before
