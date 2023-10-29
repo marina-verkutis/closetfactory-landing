@@ -456,10 +456,6 @@ input[type=checkbox]:checked + label:before {
   position: relative;
   padding: 0;
 }
-.form__select-option {
-  display: inline-block;
-  padding: 100px 140px;
-}
 .form__select::after {
   content: "";
   display: block;
@@ -574,7 +570,7 @@ input[type=checkbox]:checked + label:before {
   .form__group, .form__group-second {
     width: 100%;
   }
-  .form__input {
+  .form__input, .form__select {
     margin-bottom: 20px;
   }
   .form__policy {
@@ -1258,4 +1254,26 @@ input[type=checkbox]:checked + label:before {
   .contacts-block__item {
     margin-bottom: 60px;
   }
+}
+.about {
+  margin-top: 50px;
+  min-height: calc(100vh - 240px);
+}
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-block__image {
+  width: 40%;
+}
+.about-block__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }/*# sourceMappingURL=style.css.map */
