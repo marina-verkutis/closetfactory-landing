@@ -11,7 +11,7 @@ class Shopping {
         const { pushGood, goods } = localStorageUtil.putGoods(id);
         like.render(goods.length);
 
-        if (window.location.pathname === 'index.html') {
+        if (window.location.pathname === '/index.html') {
             prevGoods.render();
         }
         else if (window.location.pathname === '/goods.html')
