@@ -1,4 +1,4 @@
-/*
+
 function include(url) {
     var script = document.createElement('script');
     script.src = url;
@@ -7,7 +7,7 @@ function include(url) {
 
 include("../js/components/shopping.js");
 include("../js/components/like.js");
-*/
+
 
 
 $(window).load(function() {

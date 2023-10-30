@@ -16,7 +16,6 @@ class Shopping {
         }
         else if (window.location.pathname === '/goods.html')
             goodsPage.render();
-        
         shopping.render();
     }
 
