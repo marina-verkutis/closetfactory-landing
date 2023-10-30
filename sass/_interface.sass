@@ -38,6 +38,12 @@ input:focus, select:focus
     &:active
         filter: brightness(0.7)
         box-shadow: none
+.close
+    background: url('../img/close.png') no-repeat center center
+    background-size: cover
+    height: 15px
+    width: 15px
+    cursor: pointer
 .button
     text-decoration: none
     border: none
@@ -124,6 +130,17 @@ input[type="checkbox"]
     border: 0
     clip: rect(0 0 0 0)
     overflow: hidden
+.overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    overflow: hidden
+.no_scroll
+    overflow: hidden
+
 @media (max-width: 576px)
     .button-o
         font-size: 1rem

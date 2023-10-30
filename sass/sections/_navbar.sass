@@ -1,6 +1,6 @@
 .navbar
     position: fixed
-    z-index: 20
+    z-index: 99
     left: 0
     top: 0
     width: 100%
@@ -24,6 +24,7 @@
         color: $text-color-light
         text-decoration: none
     &__like
+        width: 40px
     &-counter
         position: relative
         display: flex
@@ -34,6 +35,7 @@
         width: 40px
         border-radius: 50%
         background-color: #fff
+        cursor: pointer
         &__text
             display: block
             max-width: 35px
@@ -47,11 +49,9 @@
             bottom: 0
             background: url('../img/catalog/like-counter-2.png') no-repeat center center
             background-size: cover
-
-
 .menu
     position: fixed
-    z-index: 20
+    z-index: 98
     top: 80px
     left: 0
     width: 100%

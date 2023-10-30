@@ -29,10 +29,11 @@ class Goods {
                     <img class="goods-list__image" src="${good.img}" alt="Фото товара ${good.name}"/>
                     <h3 class="goods-list__title">${good.name}</h3>
                     <div class="goods-list__description">
+                        <p class="goods-list__type">Тип: ${good.type}</p>
                         <p class="goods-list__size">Размер: ${good.size} см</p>
                         <p class="goods-list__material">Материал корпуса: ${good.material}</p>
                     </div>
-                    <button class="button-like goods-list__button-like ${activeClass}" onclick="goods.handleSetLocationStorage(this, '${good.id}');"></button>
+                    <button class="button-like goods-list__button-like ${activeClass}" onclick="goodsPage.handleSetLocationStorage(this, '${good.id}');"></button>
                     <div class="goods-list__offer">
                         <span class="goods-list__price">${good.price.toLocaleString()} руб.</span>
                         <button class="button goods-list__button">Заказать</button>
@@ -52,5 +53,5 @@ class Goods {
 
 }
 
-const goods = new Goods();
-goods.render();
+const goodsPage = new Goods();
+goodsPage.render();

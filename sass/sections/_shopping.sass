@@ -1,0 +1,52 @@
+.modal-shopping
+    position: absolute
+    z-index: 97
+.shopping
+    &-block
+        position: relative
+        width: 60%
+        height: 80vh
+        padding: 30px
+        position: fixed
+        top: 55%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #fff
+        overflow: hidden
+        box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4)
+        box-sizing: content-box
+        &__items
+            display: grid
+            grid-template-columns: 90px 3fr 2fr 40px
+            align-items: center
+        &__close
+            display: block
+            position: absolute
+            right: 30px
+            top: 30px
+        &__title
+            +bold
+        &__item
+            padding: 10px
+        &__image
+            width: 70px
+            height: 70px
+        &__name
+            +bold
+        &__price
+        &__delete
+            display: block
+            width: 20px
+            height: 20px
+            background: url('../img/shopping/delete.png') no-repeat center center
+            background-size: cover
+            cursor: pointer
+        &__button
+        &-button
+            margin: 40px 0
+            display: flex
+            justify-content: center
+    &-scroll
+        height: 70%
+        padding: 20px
+        overflow: auto

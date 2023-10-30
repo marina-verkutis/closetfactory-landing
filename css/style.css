@@ -100,6 +100,14 @@ input:focus, select:focus {
           box-shadow: none;
 }
 
+.close {
+  background: url("../img/close.png") no-repeat center center;
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
 .button {
   text-decoration: none;
   border: none;
@@ -221,6 +229,20 @@ input[type=checkbox]:checked + label:before {
   overflow: hidden;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 576px) {
   .button-o {
     font-size: 1rem;
@@ -234,7 +256,7 @@ input[type=checkbox]:checked + label:before {
 }
 .navbar {
   position: fixed;
-  z-index: 20;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -268,6 +290,9 @@ input[type=checkbox]:checked + label:before {
   color: #7b7b79;
   text-decoration: none;
 }
+.navbar__like {
+  width: 40px;
+}
 .navbar-counter {
   position: relative;
   display: -webkit-box;
@@ -284,6 +309,7 @@ input[type=checkbox]:checked + label:before {
   width: 40px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 }
 .navbar-counter__text {
   display: block;
@@ -303,7 +329,7 @@ input[type=checkbox]:checked + label:before {
 
 .menu {
   position: fixed;
-  z-index: 20;
+  z-index: 98;
   top: 80px;
   left: 0;
   width: 100%;
@@ -1383,7 +1409,8 @@ input[type=checkbox]:checked + label:before {
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 .goods-list__title {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-size: 2.2rem;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 .goods-list__description {
@@ -1411,4 +1438,75 @@ input[type=checkbox]:checked + label:before {
   position: absolute;
   top: 20px;
   z-index: 15;
+}
+
+.modal-shopping {
+  position: absolute;
+  z-index: 97;
+}
+
+.shopping-block {
+  position: relative;
+  width: 60%;
+  height: 80vh;
+  padding: 30px;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4);
+          box-shadow: 7px 5px 20px rgba(70, 48, 27, 0.4);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.shopping-block__items {
+  display: grid;
+  grid-template-columns: 90px 3fr 2fr 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shopping-block__close {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.shopping-block__title {
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.shopping-block__item {
+  padding: 10px;
+}
+.shopping-block__image {
+  width: 70px;
+  height: 70px;
+}
+.shopping-block__name {
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.shopping-block__delete {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/shopping/delete.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.shopping-block-button {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shopping-scroll {
+  height: 70%;
+  padding: 20px;
+  overflow: auto;
 }/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,10 @@ function include(url) {
     document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-include("/js/components/like.js");
+include("../js/components/shopping.js");
+include("../js/components/like.js");
+
+
 
 $(window).load(function() {
     $('.menu-button').on('click', function() {
