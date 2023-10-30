@@ -116,6 +116,20 @@ input:focus, select:focus {
   background-color: #54444b;
   color: #ffffff;
 }
+.button-add:hover {
+  cursor: pointer;
+  background-color: #9a0eff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 15px #9a0eff;
+          box-shadow: 0 0 15px #9a0eff;
+}
+.button-add:active {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .button-like {
   width: 30px;
   height: 30px;
@@ -125,13 +139,10 @@ input:focus, select:focus {
   background-color: #382D32;
   border: none;
 }
-.button-like_active {
-  background: url("../img/catalog/like-active.png") no-repeat center center;
-  background-size: cover;
-  background-color: #685050;
-}
 .button-like:hover {
   cursor: pointer;
+}
+.button-like_active {
   background: url("../img/catalog/like-active.png") no-repeat center center;
   background-size: cover;
   background-color: #685050;
@@ -256,6 +267,38 @@ input[type=checkbox]:checked + label:before {
   font-size: 1.3rem;
   color: #7b7b79;
   text-decoration: none;
+}
+.navbar-counter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.navbar-counter__text {
+  display: block;
+  max-width: 35px;
+  font-size: 1.2rem;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.navbar-counter__like {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: 0;
+  bottom: 0;
+  background: url("../img/catalog/like-counter-2.png") no-repeat center center;
+  background-size: cover;
 }
 
 .menu {

@@ -1,3 +1,11 @@
+function include(url) {
+    var script = document.createElement('script');
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+include("/js/components/like.js");
+
 $(window).load(function() {
     $('.menu-button').on('click', function() {
         $('.menu').toggleClass('menu_active');

@@ -23,6 +23,32 @@
         font-size: 1.3rem
         color: $text-color-light
         text-decoration: none
+    &__like
+    &-counter
+        position: relative
+        display: flex
+        text-align: center
+        align-items: center
+        justify-content: center
+        height: 40px
+        width: 40px
+        border-radius: 50%
+        background-color: #fff
+        &__text
+            display: block
+            max-width: 35px
+            font-size: 1.2rem
+            +bold
+        &__like
+            position: absolute
+            height: 15px
+            width: 15px
+            right: 0
+            bottom: 0
+            background: url('../img/catalog/like-counter-2.png') no-repeat center center
+            background-size: cover
+
+
 .menu
     position: fixed
     z-index: 20

@@ -170,4 +170,14 @@ const CATALOG = [
         color: 'gray',
         price: 73000,
     },
+    {
+        id: 'el4',
+        name: 'Warm stone',
+        img: 'img/catalog/catalog-img-4.jpg',
+        type: 'Шкаф-купе',
+        size: '230*150*250',
+        material: 'МДФ',
+        color: 'gray',
+        price: 73000,
+    },
 ];

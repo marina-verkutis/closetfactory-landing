@@ -51,6 +51,14 @@ input:focus, select:focus
     &-add
         background-color: lighten($primary-color, 10%)
         color: #ffffff
+        &:hover
+            cursor: pointer
+            background-color: $active-color
+            transition: 0.5s
+            box-shadow: 0 0 15px $active-color
+        &:active
+            filter: brightness(0.7)
+            box-shadow: none
     &-like
         width: 30px
         height: 30px
@@ -59,12 +67,9 @@ input:focus, select:focus
         background-size: cover
         background-color: $primary-color
         border: none
-        &_active
-            background: url('../img/catalog/like-active.png') no-repeat center center
-            background-size: cover
-            background-color: #685050
         &:hover
             cursor: pointer
+        &_active
             background: url('../img/catalog/like-active.png') no-repeat center center
             background-size: cover
             background-color: #685050
